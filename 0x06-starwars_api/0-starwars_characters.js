@@ -2,7 +2,7 @@
 const argv = process.argv;
 const request = require('request');
 
-function getPromise(url) {
+function getPromise (url) {
   const promise = new Promise(function (resolve, reject) {
     request(url, function (err, res, body) {
       if (err) reject(err);
